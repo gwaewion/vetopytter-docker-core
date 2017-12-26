@@ -8,8 +8,8 @@ RUN pip3 install --upgrade pip
 RUN pip3 install flask jwt bson pymongo pyyaml
 RUN ssh-keygen -N "" -q -f /root/.ssh/id_rsa
 RUN ssh-keyscan github.com >> ~/.ssh/known_hosts
-RUN git clone https://github.com/gwaewion/vetopytter.git
+RUN git clone https://github.com/gwaewion/vetopytter-core.git 
 
-WORKDIR /vetopytter
+WORKDIR /vetopytter-core
 
 CMD ["python3", "-B", "VetoPytter.py"]
