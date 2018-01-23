@@ -10,6 +10,6 @@ else
 	sed -i "s/host: CHANGE_ME/host: "${MONGODB_ADDRESS}"/" config.yml
 	sed -i "s/database: CHANGE_ME/database: "${MONGODB_DBNAME}"/" config.yml
 	sed -i "s/username: CHANGE_ME/username: "${MONGODB_USERNAME}"/" config.yml
-	sed -i "s/passowrd: CHANGE_ME/passowrd: "${MONGODB_PASSWORD}"/" config.yml
+	sed -i "s/password: CHANGE_ME/password: "${MONGODB_PASSWORD}"/" config.yml
 	python3 -B VetoPytter.py
 fi
